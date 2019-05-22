@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9E1C9BF22295CE0F00102EB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1C9BF12295CE0F00102EB0 /* AppDelegate.swift */; };
+		9E1C9BF42295CE0F00102EB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1C9BF32295CE0F00102EB0 /* ViewController.swift */; };
+		9E1C9BF72295CE0F00102EB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E1C9BF52295CE0F00102EB0 /* Main.storyboard */; };
+		9E1C9BF92295CE1000102EB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E1C9BF82295CE1000102EB0 /* Assets.xcassets */; };
+		9E1C9BFC2295CE1000102EB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E1C9BFA2295CE1000102EB0 /* LaunchScreen.storyboard */; };
+		9E1C9C072295CE1000102EB0 /* TGFlingActionButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1C9C062295CE1000102EB0 /* TGFlingActionButtonTests.swift */; };
+		9E1C9C122295CE5300102EB0 /* TGFlingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1C9C112295CE5300102EB0 /* TGFlingActionButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9E1C9C032295CE1000102EB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E1C9BE62295CE0F00102EB0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E1C9BED2295CE0F00102EB0;
+			remoteInfo = TGFlingActionButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9E1C9BEE2295CE0F00102EB0 /* TGFlingActionButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TGFlingActionButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E1C9BF12295CE0F00102EB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9E1C9BF32295CE0F00102EB0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9E1C9BF62295CE0F00102EB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9E1C9BF82295CE1000102EB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9E1C9BFB2295CE1000102EB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9E1C9BFD2295CE1000102EB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E1C9C022295CE1000102EB0 /* TGFlingActionButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TGFlingActionButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E1C9C062295CE1000102EB0 /* TGFlingActionButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TGFlingActionButtonTests.swift; sourceTree = "<group>"; };
+		9E1C9C082295CE1000102EB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E1C9C112295CE5300102EB0 /* TGFlingActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TGFlingActionButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9E1C9BEB2295CE0F00102EB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E1C9BFF2295CE1000102EB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9E1C9BE52295CE0F00102EB0 = {
+			isa = PBXGroup;
+			children = (
+				9E1C9BF02295CE0F00102EB0 /* TGFlingActionButton */,
+				9E1C9C052295CE1000102EB0 /* TGFlingActionButtonTests */,
+				9E1C9BEF2295CE0F00102EB0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9E1C9BEF2295CE0F00102EB0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E1C9BEE2295CE0F00102EB0 /* TGFlingActionButton.app */,
+				9E1C9C022295CE1000102EB0 /* TGFlingActionButtonTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E1C9BF02295CE0F00102EB0 /* TGFlingActionButton */ = {
+			isa = PBXGroup;
+			children = (
+				9E1C9BF12295CE0F00102EB0 /* AppDelegate.swift */,
+				9E1C9BF32295CE0F00102EB0 /* ViewController.swift */,
+				9E1C9BF52295CE0F00102EB0 /* Main.storyboard */,
+				9E1C9BF82295CE1000102EB0 /* Assets.xcassets */,
+				9E1C9BFA2295CE1000102EB0 /* LaunchScreen.storyboard */,
+				9E1C9BFD2295CE1000102EB0 /* Info.plist */,
+				9E1C9C112295CE5300102EB0 /* TGFlingActionButton.swift */,
+			);
+			path = TGFlingActionButton;
+			sourceTree = "<group>";
+		};
+		9E1C9C052295CE1000102EB0 /* TGFlingActionButtonTests */ = {
+			isa = PBXGroup;
+			children = (
+				9E1C9C062295CE1000102EB0 /* TGFlingActionButtonTests.swift */,
+				9E1C9C082295CE1000102EB0 /* Info.plist */,
+			);
+			path = TGFlingActionButtonTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9E1C9BED2295CE0F00102EB0 /* TGFlingActionButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E1C9C0B2295CE1000102EB0 /* Build configuration list for PBXNativeTarget "TGFlingActionButton" */;
+			buildPhases = (
+				9E1C9BEA2295CE0F00102EB0 /* Sources */,
+				9E1C9BEB2295CE0F00102EB0 /* Frameworks */,
+				9E1C9BEC2295CE0F00102EB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TGFlingActionButton;
+			productName = TGFlingActionButton;
+			productReference = 9E1C9BEE2295CE0F00102EB0 /* TGFlingActionButton.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9E1C9C012295CE1000102EB0 /* TGFlingActionButtonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E1C9C0E2295CE1000102EB0 /* Build configuration list for PBXNativeTarget "TGFlingActionButtonTests" */;
+			buildPhases = (
+				9E1C9BFE2295CE1000102EB0 /* Sources */,
+				9E1C9BFF2295CE1000102EB0 /* Frameworks */,
+				9E1C9C002295CE1000102EB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9E1C9C042295CE1000102EB0 /* PBXTargetDependency */,
+			);
+			name = TGFlingActionButtonTests;
+			productName = TGFlingActionButtonTests;
+			productReference = 9E1C9C022295CE1000102EB0 /* TGFlingActionButtonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9E1C9BE62295CE0F00102EB0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Tilakkumar Gondi";
+				TargetAttributes = {
+					9E1C9BED2295CE0F00102EB0 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					9E1C9C012295CE1000102EB0 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 9E1C9BED2295CE0F00102EB0;
+					};
+				};
+			};
+			buildConfigurationList = 9E1C9BE92295CE0F00102EB0 /* Build configuration list for PBXProject "TGFlingActionButton" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9E1C9BE52295CE0F00102EB0;
+			productRefGroup = 9E1C9BEF2295CE0F00102EB0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9E1C9BED2295CE0F00102EB0 /* TGFlingActionButton */,
+				9E1C9C012295CE1000102EB0 /* TGFlingActionButtonTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9E1C9BEC2295CE0F00102EB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E1C9BFC2295CE1000102EB0 /* LaunchScreen.storyboard in Resources */,
+				9E1C9BF92295CE1000102EB0 /* Assets.xcassets in Resources */,
+				9E1C9BF72295CE0F00102EB0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E1C9C002295CE1000102EB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9E1C9BEA2295CE0F00102EB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E1C9BF42295CE0F00102EB0 /* ViewController.swift in Sources */,
+				9E1C9C122295CE5300102EB0 /* TGFlingActionButton.swift in Sources */,
+				9E1C9BF22295CE0F00102EB0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E1C9BFE2295CE1000102EB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E1C9C072295CE1000102EB0 /* TGFlingActionButtonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9E1C9C042295CE1000102EB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9E1C9BED2295CE0F00102EB0 /* TGFlingActionButton */;
+			targetProxy = 9E1C9C032295CE1000102EB0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9E1C9BF52295CE0F00102EB0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E1C9BF62295CE0F00102EB0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9E1C9BFA2295CE1000102EB0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E1C9BFB2295CE1000102EB0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9E1C9C092295CE1000102EB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9E1C9C0A2295CE1000102EB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E1C9C0C2295CE1000102EB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FV6AA58LYL;
+				INFOPLIST_FILE = TGFlingActionButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tilak.TGFlingActionButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9E1C9C0D2295CE1000102EB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FV6AA58LYL;
+				INFOPLIST_FILE = TGFlingActionButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tilak.TGFlingActionButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9E1C9C0F2295CE1000102EB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FV6AA58LYL;
+				INFOPLIST_FILE = TGFlingActionButtonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tilak.TGFlingActionButtonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TGFlingActionButton.app/TGFlingActionButton";
+			};
+			name = Debug;
+		};
+		9E1C9C102295CE1000102EB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FV6AA58LYL;
+				INFOPLIST_FILE = TGFlingActionButtonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tilak.TGFlingActionButtonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TGFlingActionButton.app/TGFlingActionButton";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9E1C9BE92295CE0F00102EB0 /* Build configuration list for PBXProject "TGFlingActionButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E1C9C092295CE1000102EB0 /* Debug */,
+				9E1C9C0A2295CE1000102EB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E1C9C0B2295CE1000102EB0 /* Build configuration list for PBXNativeTarget "TGFlingActionButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E1C9C0C2295CE1000102EB0 /* Debug */,
+				9E1C9C0D2295CE1000102EB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E1C9C0E2295CE1000102EB0 /* Build configuration list for PBXNativeTarget "TGFlingActionButtonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E1C9C0F2295CE1000102EB0 /* Debug */,
+				9E1C9C102295CE1000102EB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9E1C9BE62295CE0F00102EB0 /* Project object */;
+}
