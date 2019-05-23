@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,60 +18,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LWA-78-60h" customClass="TGFlingActionButton" customModule="TGFlingActionButton" customModuleProvider="target">
-                                <rect key="frame" x="16" y="306" width="343" height="56"/>
-                                <color key="backgroundColor" red="0.0" green="0.6588235294" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="IBt-KA-m78"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="InitialStateColor">
-                                        <color key="value" red="0.0" green="0.6588235294" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="FinalStateColor">
-                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="ProgressLine">
-                                        <color key="value" red="0.87450980389999999" green="0.30980392159999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
-                                        <real key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="SwipableLayerCornerRadius">
-                                        <real key="value" value="8"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="flingActionCallback:" destination="BYZ-38-t0r" eventType="valueChanged" id="9kg-TX-14p"/>
-                                </connections>
-                            </button>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="jtZ-4G-VMh">
                                 <rect key="frame" x="169" y="116" width="37" height="37"/>
                                 <color key="backgroundColor" red="0.4705716372" green="0.78867304329999999" blue="0.92282730339999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.86909085509999995" green="0.3078184128" blue="0.001789332833" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="37" id="emE-RZ-uyP"/>
-                                    <constraint firstAttribute="height" constant="37" id="nwO-ai-7Ri"/>
-                                </constraints>
                                 <color key="color" red="0.86909085509999995" green="0.3078184128" blue="0.001789332833" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xQo-Nr-nB1" customClass="TGFlingActionButton" customModule="TGFlingActionButton" customModuleProvider="target">
+                                <rect key="frame" x="25" y="308.5" width="325" height="50"/>
+                                <color key="backgroundColor" red="0.64425616200000002" green="0.34049166320000002" blue="0.90724981019999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="hE0-fZ-f1m"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="InitialStateColor">
+                                        <color key="value" red="0.95766395250000003" green="0.74996019309999995" blue="0.046224281989999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="FinalStateColor">
+                                        <color key="value" red="0.0" green="0.80515342359999997" blue="0.26075594190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="FlingColor">
+                                        <color key="value" red="0.64425616200000002" green="0.34049166320000002" blue="0.90724981019999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.4705716372" green="0.78867304329999999" blue="0.92282730339999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="LWA-78-60h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="LqI-N6-Bfv"/>
-                            <constraint firstItem="jtZ-4G-VMh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="169" id="Phi-ie-5cm"/>
-                            <constraint firstItem="jtZ-4G-VMh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="96" id="TfH-3q-dg9"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jtZ-4G-VMh" secondAttribute="trailing" constant="169" id="VuI-K2-Q5F"/>
-                            <constraint firstItem="LWA-78-60h" firstAttribute="top" secondItem="jtZ-4G-VMh" secondAttribute="bottom" constant="153" id="WSu-oL-AIn"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LWA-78-60h" secondAttribute="bottom" constant="305" id="aUk-ZV-bt5"/>
-                            <constraint firstItem="LWA-78-60h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="286" id="qqG-92-SeS"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LWA-78-60h" secondAttribute="trailing" constant="16" id="z6s-td-Aoq"/>
+                            <constraint firstItem="jtZ-4G-VMh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="96" id="1Mu-Ak-ZT7"/>
+                            <constraint firstItem="xQo-Nr-nB1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4dA-Tn-eXd"/>
+                            <constraint firstItem="jtZ-4G-VMh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6hv-Oa-9du"/>
+                            <constraint firstItem="xQo-Nr-nB1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SsH-RW-G6u"/>
+                            <constraint firstItem="xQo-Nr-nB1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="YV4-oM-l5V"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xQo-Nr-nB1" secondAttribute="trailing" constant="25" id="Zhd-NJ-qFq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="activityIndicator" destination="jtZ-4G-VMh" id="aXo-Bf-uon"/>
-                        <outlet property="fling_button" destination="LWA-78-60h" id="0kG-26-UUX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
