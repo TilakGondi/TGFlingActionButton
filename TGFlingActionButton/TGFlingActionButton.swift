@@ -131,7 +131,7 @@ class TGFlingActionButton: UIButton {
                     let x:Int = Int(translation.x)
                     if  x > Int(self.frame.size.width - self.frame.size.height) {
                         UIView.animate(withDuration: 0.2, animations: {
-                            self.swipableView!.frame = CGRect(x:((self.frame.size.width)-(self.swipableView?.frame.size.width)! - 2), y: (self.frame.size.height/2) - 25, width: (self.swipableView?.frame.size.width)!, height: (self.frame.size.height - 4))
+                            self.swipableView!.frame = CGRect(x:((self.frame.size.width)-(self.swipableView?.frame.size.width)! - 2), y: (self.swipableView?.frame.origin.y)!, width: (self.swipableView?.frame.size.width)!, height: (self.frame.size.height - 4))
                             self.swipableView?.backgroundColor = self.FinalStateColor
                         })
                         
@@ -148,7 +148,7 @@ class TGFlingActionButton: UIButton {
                         return
                     }
                     UIView.animate(withDuration: 0.0) {
-                        self.swipableView!.frame = CGRect(x: (translation.x) , y: (self.frame.size.height/2) - 25, width: (self.swipableView?.frame.size.width)!, height: (self.frame.size.height - 4))
+                        self.swipableView!.frame = CGRect(x: (translation.x) , y: (self.swipableView?.frame.origin.y)!, width: (self.swipableView?.frame.size.width)!, height: (self.frame.size.height - 4))
                     }
                     
                 }

@@ -22,13 +22,13 @@
                                 <rect key="frame" x="169" y="116" width="37" height="37"/>
                                 <color key="backgroundColor" red="0.4705716372" green="0.78867304329999999" blue="0.92282730339999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.86909085509999995" green="0.3078184128" blue="0.001789332833" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="color" red="0.86909085509999995" green="0.3078184128" blue="0.001789332833" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="color" red="0.95766395250000003" green="0.74996019309999995" blue="0.046224281989999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xQo-Nr-nB1" customClass="TGFlingActionButton" customModule="TGFlingActionButton" customModuleProvider="target">
-                                <rect key="frame" x="25" y="308.5" width="325" height="50"/>
+                                <rect key="frame" x="25" y="597" width="325" height="50"/>
                                 <color key="backgroundColor" red="0.64425616200000002" green="0.34049166320000002" blue="0.90724981019999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="hE0-fZ-f1m"/>
+                                    <constraint firstAttribute="height" constant="50" id="fc2-jd-iau"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="InitialStateColor">
@@ -41,21 +41,37 @@
                                         <color key="value" red="0.64425616200000002" green="0.34049166320000002" blue="0.90724981019999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="flingActionCallback:" destination="BYZ-38-t0r" eventType="valueChanged" id="lqz-XJ-93w"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVk-yO-hyx">
+                                <rect key="frame" x="25" y="297.5" width="325" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="ZGb-lB-RSC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.4705716372" green="0.78867304329999999" blue="0.92282730339999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="jtZ-4G-VMh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="96" id="1Mu-Ak-ZT7"/>
-                            <constraint firstItem="xQo-Nr-nB1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4dA-Tn-eXd"/>
-                            <constraint firstItem="jtZ-4G-VMh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6hv-Oa-9du"/>
-                            <constraint firstItem="xQo-Nr-nB1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SsH-RW-G6u"/>
-                            <constraint firstItem="xQo-Nr-nB1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="YV4-oM-l5V"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xQo-Nr-nB1" secondAttribute="trailing" constant="25" id="Zhd-NJ-qFq"/>
+                            <constraint firstItem="jtZ-4G-VMh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="96" id="7d1-p5-WmJ"/>
+                            <constraint firstItem="mVk-yO-hyx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Anm-He-xzg"/>
+                            <constraint firstItem="xQo-Nr-nB1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="Dc4-A6-C2J"/>
+                            <constraint firstItem="jtZ-4G-VMh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Luu-Qi-HoP"/>
+                            <constraint firstItem="mVk-yO-hyx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="PY6-94-WQm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xQo-Nr-nB1" secondAttribute="bottom" constant="20" id="Wvb-6b-tWT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mVk-yO-hyx" secondAttribute="trailing" constant="25" id="bPu-lt-CMU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xQo-Nr-nB1" secondAttribute="trailing" constant="25" id="gxE-69-yIA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="activityIndicator" destination="jtZ-4G-VMh" id="aXo-Bf-uon"/>
+                        <outlet property="fling_button" destination="xQo-Nr-nB1" id="Ge9-A9-v7w"/>
+                        <outlet property="lbl_progressState" destination="mVk-yO-hyx" id="VH3-fa-wAn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
