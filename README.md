@@ -15,19 +15,16 @@ Well..! Here is an easy to integrate class **"TGFlingActionButton"** that extend
       * `InitialStateColor` - This attribute will set the colour indicating initial state before user swipe.
       * `FinalStateColor`   - This attribute will set the colour to indicate the completion of user swipe action.
       * `ImageFlingLayer`   - This attribute will set the image on the button. viz. right arrow for indicating the swipe direction.
+      
 6. Then open up the assistant editor  for the storyboard seen with the button and do the following.
-
-        - Connect the @IBAction method with the action type as  `value changed`  and sender object class as `TGFlingActionButton` from storyboard to the view controller class. `This method will be triggered when the user completes the swipe action`.
-                
-                > `@IBAction func flingActionCallback(_ sender: TGFlingActionButton)`
-        
-        - In the @IBAction function we will get the direction in which user has swiped the button, here we can trigger the appropriate process/api calls/payment methods based on the users swiped direction as per the requirements. 
-           
-        - Further if you woud like to further change the appearence of the button i.e. title, colour etc. you can have the IBOutlet for the button.
+     * Connect the @IBAction method with the action type as  `value changed`  and sender object class as `TGFlingActionButton` from storyboard to the view controller class. `This method will be triggered when the user completes the swipe action`.
+                `@IBAction func flingActionCallback(_ sender: TGFlingActionButton)`
+     * In the @IBAction function we will get the direction in which user has swiped the button, here we can trigger the appropriate process/api calls/payment methods based on the users swiped direction as per the requirements. 
+     * Further if you woud like to further change the appearence of the button i.e. title, colour etc. you can have the IBOutlet for the button.
         
 Yes...! thats it.
 
-Feel free to customize the button as per your requirements. This was just an idea/ convinence class i have put up to start with and wuick integration with iOS projects.
+Feel free to customize the button as per your requirements. This was just an idea/ convinence class that I have created for quick integration of fling action button in iOS projects.
 
 > I would appreciate your suggestions for further improvement of this UI component.
 
