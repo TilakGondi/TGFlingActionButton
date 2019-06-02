@@ -24,7 +24,7 @@ Well..! Here is an easy to integrate class **"TGFlingActionButton"** that extend
         
 Yes...! thats it.
 
-Feel free to customize the button as per your requirements. This was just an idea/ convinence class i have put up to start with and wuick integration with iOS projects.
+Feel free to customize the button as per your requirements. This was just an idea/ convinence class that I have created for quick integration of fling action button in iOS projects.
 
 > I would appreciate your suggestions for further improvement of this UI component.
 
