@@ -5,5 +5,5 @@ Do you want to have the 'Swipe to Proceed/Swipe to Agree/Swipe to Pay' buttons i
 
 Well..! Here is an easy to integrate class "TGFlingActionButton" that extends UIButton class which will convert your button on storyboard to fling action button. 
 
-Follow the below steps to get your UIButton converted to fling action button:
+# Follow the below steps to get your UIButton converted to fling action button:
 
