@@ -32,7 +32,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="InitialStateColor">
-                                        <color key="value" red="0.95766395250000003" green="0.74996019309999995" blue="0.046224281989999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.86909085509999995" green="0.3078184128" blue="0.001789332833" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="FinalStateColor">
                                         <color key="value" red="0.0" green="0.80515342359999997" blue="0.26075594190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -40,6 +40,7 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="FlingColor">
                                         <color key="value" red="0.64425616200000002" green="0.34049166320000002" blue="0.90724981019999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="ImageFlingLayer" value="WhiteRightArrow"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="flingActionCallback:" destination="BYZ-38-t0r" eventType="valueChanged" id="lqz-XJ-93w"/>
@@ -79,4 +80,7 @@
             <point key="canvasLocation" x="61.600000000000001" y="27.436281859070466"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="WhiteRightArrow" width="88" height="88"/>
+    </resources>
 </document>

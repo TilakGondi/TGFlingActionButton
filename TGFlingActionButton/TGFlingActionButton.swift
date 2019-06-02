@@ -60,12 +60,6 @@ class TGFlingActionButton: UIButton {
         }
     }
     
-    @IBInspectable var FlingColor: UIColor?  {
-        didSet {
-            self.FlingColor = FlingColor!
-        }
-    }
-    
     @IBInspectable var ImageFlingLayer: UIImage?  {
         didSet {
             self.ImageFlingLayer = ImageFlingLayer!
