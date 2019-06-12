@@ -36,7 +36,7 @@ class TGFlingActionButton: UIButton {
     private var panGestureR:UIPanGestureRecognizer?
     
     private var swipableView:UILabel?
-    private var rightImage:UIImageView?
+    private var swipeOverlay:UIImageView?
 
     
     private(set) var swipe_direction:Swipe_Direction = .none
@@ -60,13 +60,11 @@ class TGFlingActionButton: UIButton {
         }
     }
     
-    @IBInspectable var ImageFlingLayer: UIImage?  {
+    @IBInspectable var ImageOverlay: UIImage?  {
         didSet {
-            self.ImageFlingLayer = ImageFlingLayer!
+            self.ImageOverlay = ImageOverlay!
         }
     }
-    
-  
     
     
     override func draw(_ rect: CGRect) {
@@ -78,7 +76,7 @@ class TGFlingActionButton: UIButton {
         super.draw(rect)
     }
     
-    
+    // To Add the swipable lable with pan-gesture enabled over the button
     func setSwipableLayer() -> UIView {
         self.layer.cornerRadius = self.frame.size.height/2
         
@@ -93,14 +91,14 @@ class TGFlingActionButton: UIButton {
         swipableView?.clipsToBounds = true
         
         
-        if (ImageFlingLayer != nil) {
-            rightImage = UIImageView.init(image: ImageFlingLayer)
-            rightImage!.frame = CGRect(x: 2 , y: 2, width: (swipableView?.frame.width)! - 4, height: (swipableView?.frame.width)! - 4)
-            rightImage!.isUserInteractionEnabled = true
-            rightImage!.backgroundColor = UIColor.clear
-            rightImage!.contentMode = UIView.ContentMode.scaleAspectFill
-            rightImage?.clipsToBounds = true
-            swipableView!.addSubview(rightImage!)
+        if (ImageOverlay != nil) {
+            swipeOverlay = UIImageView.init(image: ImageOverlay)
+            swipeOverlay!.frame = CGRect(x: 2 , y: 2, width: (swipableView?.frame.width)! - 4, height: (swipableView?.frame.width)! - 4)
+            swipeOverlay!.isUserInteractionEnabled = true
+            swipeOverlay!.backgroundColor = UIColor.clear
+            swipeOverlay!.contentMode = UIView.ContentMode.scaleAspectFill
+            swipeOverlay?.clipsToBounds = true
+            swipableView?.insertSubview(swipeOverlay!, at: 1)
         }
         
         
@@ -114,33 +112,38 @@ class TGFlingActionButton: UIButton {
     @objc func handelPanGesture(panGesture: UIPanGestureRecognizer) {
         
         let translation = panGesture.translation(in: panGesture.view?.superview)
-        
-        if translation.x >= 0 {
+        let xPos:Int = Int(translation.x)
+        let threshHoldX:Int = Int(self.frame.size.width - self.frame.size.height)
+        if xPos >= 0 {
             if self.swipe_direction == .none {
                 self.swipe_direction = self.getSwipeDirection(translation: translation)
             }
+            
             if self.swipe_direction == .right {
-                self.setTitle("", for: UIControl.State.normal)
+                if Int((self.swipableView?.frame.origin.x)!) > threshHoldX {
+                    //Ignore if the state is final.
+                    return
+                }
+                
                 if panGesture.state == UIGestureRecognizer.State.ended {
-                    let x:Int = Int(translation.x)
-                    if  x > Int(self.frame.size.width - self.frame.size.height) {
+                    if  xPos > threshHoldX {
                         UIView.animate(withDuration: 0.2, animations: {
                             self.swipableView!.frame = CGRect(x:((self.frame.size.width)-(self.swipableView?.frame.size.width)! - 2), y: (self.swipableView?.frame.origin.y)!, width: (self.swipableView?.frame.size.width)!, height: (self.frame.size.height - 4))
-                            self.swipableView?.backgroundColor = self.FinalStateColor
                         })
-                        
+                        UIView.animate(withDuration: 0.5) {
+                            self.swipableView?.backgroundColor = self.FinalStateColor
+                            self.swipeOverlay?.transform = (self.swipeOverlay?.transform.rotated(by: CGFloat(180.0 * .pi / 180.0)))!                        }
                         self.sendActions(for: .valueChanged)
-                        self.swipe_direction = .none
-                        
-                    }else{
+                    }else {
                         UIView.animate(withDuration: 0.2, animations: {
                             self.swipableView!.frame = CGRect(x:2, y: (self.swipableView?.frame.origin.y)!, width: (self.swipableView?.frame.size.width)!, height: (self.frame.size.height - 4))
                         })
                     }
                 }else{
-                    if Int(translation.x) > Int(self.frame.size.width - self.frame.size.height) {
+                    if xPos > threshHoldX {
                         return
                     }
+                    //To set the x position of the swipe lable layer to the gesture translation value.
                     UIView.animate(withDuration: 0.0) {
                         self.swipableView!.frame = CGRect(x: (translation.x) , y: (self.swipableView?.frame.origin.y)!, width: (self.swipableView?.frame.size.width)!, height: (self.frame.size.height - 4))
                     }
@@ -150,6 +153,21 @@ class TGFlingActionButton: UIButton {
         }
         
     }
+    
+    
+    //To reset teh fling button to initial state.
+    func reset() {
+        UIView.animate(withDuration: 0.2, animations: {
+            self.swipe_direction = .none
+            self.swipableView!.frame = CGRect(x:2, y: (self.swipableView?.frame.origin.y)!, width: (self.swipableView?.frame.size.width)!, height: (self.frame.size.height - 4))
+        })
+        
+        UIView.animate(withDuration: 0.5) {
+            self.swipableView?.backgroundColor = self.InitialStateColor
+            self.swipeOverlay?.transform = (self.swipeOverlay?.transform.rotated(by: CGFloat(180.0 * .pi / 180.0)))!
+        }
+    }
+    
     
     func getSwipeDirection(translation:CGPoint) -> Swipe_Direction {
         
